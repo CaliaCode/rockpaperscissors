@@ -1,0 +1,8 @@
+server:
+  port: 4040
+
+junit:
+  jupiter:
+    testinstance:
+      lifecycle:
+        default: per_class

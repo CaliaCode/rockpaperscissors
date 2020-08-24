@@ -1,0 +1,35 @@
+{
+  "name": "rockpaperscissors",
+  "version": "1.0.0",
+  "description": "docker run -d -p 37017:27017 --name mongodb mongo",
+  "main": "index.js",
+  "scripts": {
+    "dev": "npm run development",
+    "development": "cross-env NODE_ENV=development node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "watch": "npm run development -- --watch",
+    "hot": "cross-env NODE_ENV=development node_modules/webpack-dev-server/bin/webpack-dev-server.js --inline --hot --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "prod": "npm run production",
+    "production": "cross-env NODE_ENV=production node_modules/webpack/bin/webpack.js --no-progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CaliaCode/rockpaperscissors.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CaliaCode/rockpaperscissors/issues"
+  },
+  "homepage": "https://github.com/CaliaCode/rockpaperscissors#readme",
+  "devDependencies": {
+    "cross-env": "^7.0.2",
+    "laravel-mix": "^5.0.5",
+    "sass": "^1.26.10",
+    "sass-loader": "^8.0.2",
+    "ts-loader": "^8.0.3",
+    "typescript": "^4.0.2"
+  },
+  "dependencies": {
+    "bootstrap": "^4.5.2"
+  }
+}
