@@ -22,7 +22,7 @@ class GameControllerServiceImpl(
         val game = gameService.createGame(playerOne, playerTwo)
 
         // Play Rounds
-        for (round in 0..roundCount) {
+        for (round in 1..roundCount) {
             val playedRound = roundService.playRound(round, Move(MoveType.ROCK), Move(playerTwo.moveTypes.random()));
 
             game.rounds.add(playedRound)
