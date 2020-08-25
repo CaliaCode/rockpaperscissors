@@ -2,9 +2,83 @@
 
 <div class="container">
     <div class="row">
-        <div class="col-5"></div>
-        <div class="col-2"></div>
-        <div class="col-5"></div>
+        <div class="col-5">
+            <div class="player-statistic-box">
+                <h3>{{ game.playerOneStatistic.player.name }}</h3>
+                <ul>
+                    <li>
+                        <h5>
+                            WIN
+                        </h5>
+                        <div>
+                            {{ game.playerOneStatistic.win }}
+                        </div>
+                    </li>
+
+                    <li>
+                        <h5>
+                            DRAW
+                        </h5>
+                        <div>
+                            {{ game.playerOneStatistic.draw }}
+                        </div>
+                    </li>
+
+                    <li>
+                        <h5>
+                            LOSE
+                        </h5>
+                        <div>
+                            {{ game.playerOneStatistic.lose }}
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="col-2">
+            <div class="player-statistic-vs">
+                VS
+            </div>
+        </div>
+
+        <div class="col-5">
+            <div class="player-statistic-box">
+                <h3>{{ game.playerTwoStatistic.player.name }}</h3>
+                <ul>
+                    <li>
+                        <h5>
+                            WIN
+                        </h5>
+                        <div>
+                            {{ game.playerTwoStatistic.win }}
+                        </div>
+                    </li>
+
+                    <li>
+                        <h5>
+                            DRAW
+                        </h5>
+                        <div>
+                            {{ game.playerTwoStatistic.draw }}
+                        </div>
+                    </li>
+
+                    <li>
+                        <h5>
+                            LOSE
+                        </h5>
+                        <div>
+                            {{ game.playerTwoStatistic.lose }}
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="row justify-content-center mt-5">
+        <a href="/" class="btn btn-primary">Play Again</a>
     </div>
 </div>
 

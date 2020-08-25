@@ -1,0 +1,53 @@
+@import "~bootstrap/scss/bootstrap";
+
+header {
+    padding: 12px 0;
+    margin-bottom: 35px;
+}
+
+#logo img {
+    height: 50px;
+}
+
+.player-statistic-box h3 {
+    font-size: 22px;
+    font-weight: 700;
+    color: #000000;
+    text-align: center;
+    padding: 12px 15px;
+    margin-bottom: 18px;
+}
+
+.player-statistic-box ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.player-statistic-box ul li {
+   padding: 8px 12px;
+   float: left;
+   flex-grow: 1;
+}
+
+.player-statistic-box ul li h5 {
+    font-size: 18px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.player-statistic-box ul li div {
+    font-size: 11px;
+    text-align: center;
+}
+
+.player-statistic-vs {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 32px;
+    color: #1285c8;
+}
